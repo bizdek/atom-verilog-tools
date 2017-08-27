@@ -1,0 +1,28 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle bizdek-verilog-tools",
+        "command": "bizdek-verilog-tools:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Verilog tools",
+          "submenu": [
+            {"label": "Generate test bench",
+              "command": "bizdek-verilog-tools:generateTestBench"},
+            {"label": "Insert header",
+              "command": "bizdek-verilog-tools:insertHeader"},
+            {"label": "Copy module",
+              "command": "bizdek-verilog-tools:copyModule"}
+          ]
+        }
+      ]
+    }
+  ]
+}
