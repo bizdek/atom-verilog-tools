@@ -1,6 +1,6 @@
 # verilog-tools
 
-Handy tools for easier Verilog development in atom.
+Handy tools for easier Verilog development in Atom.
 
 ### Install
 This package requires [python](https://www.python.org/) with installed python package [pyverilog](https://pypi.python.org/pypi/pyverilog).

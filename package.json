@@ -2,19 +2,17 @@
   "name": "verilog-tools",
   "main": "./lib/main",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": ["Verilog"
+  "description": "Handy tools for easier Verilog development in Atom.",
+  "keywords": [
+    "Verilog",
+    "HDL"
   ],
-
-  "repository": "https://github.com/atom/bizdek-verilog-tools",
+  "repository": "https://github.com/bizdek/verilog-tools.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-
-  },
-
+  "dependencies": {},
   "providedServices": {
     "intentions:list": {
       "versions": {
