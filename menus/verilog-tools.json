@@ -1,0 +1,28 @@
+{
+  "menu": [
+    { "label": "Packages",
+      "submenu": [
+        { "label": "Verilog tools",
+          "submenu": [
+            {"label": "Create link file",
+              "command": "verilog-tools:createLinkFile"},
+            {"label": "Link",
+              "submenu": [
+                {"label": "Files",
+                  "command": "verilog-tools:linkFiles"},
+                {"label": "Folders",
+                  "command": "verilog-tools:linkFolders"},
+                {"label": "Include folders",
+                  "command": "verilog-tools:linkIncludeFolders"}
+              ]
+            },
+            {"label": "Import files",
+              "command": "verilog-tools:importFiles"},
+            {"label": "Insert header",
+              "command": "verilog-tools:insertHeader"}
+          ]
+        }
+      ]
+    }
+  ]
+}

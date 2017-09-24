@@ -1,6 +1,6 @@
 {
-  "name": "bizdek-verilog-tools",
-  "main": "./lib/bizdek-verilog-tools",
+  "name": "verilog-tools",
+  "main": "./lib/main",
   "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": ["Verilog"
@@ -12,5 +12,14 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+
+  },
+
+  "providedServices": {
+    "intentions:list": {
+      "versions": {
+        "1.0.0": "provideIntentions"
+      }
+    }
   }
 }
