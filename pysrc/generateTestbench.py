@@ -64,7 +64,8 @@ def generateTestbench():
 
     ret = modules[pos] + " "
     params = infoTable.getParamNames(modules[pos])
-    print("`define CLK_EDGE_WIDTH = " + UNKNOWN + ";\n")
+    print('`include "timescale.v"\n\n')
+    print("`define CLK_EDGE_WIDTH   5\n")
     print("\nmodule " + modules[pos] + "_test();\n")
     for p in params:
         print("localparam " + p + " = " + UNKNOWN + ";")
@@ -83,7 +84,8 @@ def generateTestbench():
     first = True
     curLine = 0
     regs = ["clk", "rst"]
-    alignment = spacesForAlignment(ret, first=False, maxLen=20)
+    # alignment = spacesForAlignment(ret, first=False, maxLen=20)
+    alignment = " "*4
     while moduleSignals:
         signal = moduleSignals.popitem(last=False)[1][0]  # this is how you access the signal
         ioType = type(signal).__name__   # Input, Output, Inout
@@ -108,6 +110,7 @@ def generateTestbench():
             first = False
 
         while curLine < signal.lineno:
+            print("")
             ret += "\n"
             curLine += 1
 
@@ -119,7 +122,9 @@ def generateTestbench():
     ret += ");"
 
     alignment = "    "
-    print("initial begin")
+    print("\n\ninitial begin")
+    print('$dumpfile("signals.vcd");')
+    print('$dumpvars;')
     for r in regs:
         print(alignment + r + " = " + INITIAL + ";")
     print("end\n")

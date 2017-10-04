@@ -66,7 +66,8 @@ def copyModule():
     moduleSignals = infoTable.getSignals(modules[pos])
     first = True
     curLine = 0
-    alignment = spacesForAlignment(ret, first=False, maxLen=20)
+    # alignment = spacesForAlignment(ret, first=False, maxLen=20)
+    alignment = " "*4
     while moduleSignals:
         signal = moduleSignals.popitem(last=False)[1][0]  # this is how you access the signal
         if first:
