@@ -1,3 +1,1 @@
-## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+Look at https://github.com/bizdek/verilog-tools/releases.
