@@ -27,6 +27,7 @@ All features are accessed via packages menu or `ctrl+shift+p` if not otherwise s
 - Insert header - will insert content from header file specified in settings to start of the active file
 - Copy module (Accessed via intensions `alt+enter`) - will copy module to clipboard
 - Generate test bench (Accessed via intensions `alt+enter`) - generates new test bench
+- Highlights `begin end` and other keyword pairs
 
 Currently functionalities used via intensions use first verilog module in file and all intension are accessed everywhere in file.
 
